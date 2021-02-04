@@ -22,6 +22,8 @@ const NuevaCuenta = (props) => {
         if(mensaje){
             mostrarAlerta(mensaje.msg, mensaje.categoria);
         }
+
+        //eslint-disable-next-line
     }, [mensaje, autenticado, props.history ]);
 //State para iniciar sesion
 
@@ -140,7 +142,7 @@ const NuevaCuenta = (props) => {
                         <input
                             type="submit"
                             className="btn btn-primario btn-block"
-                            value="Iniciar Registrarme"
+                            value="Registrarme"
                         />
                     </div>    
                 </form>
