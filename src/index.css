@@ -1,11 +1,11 @@
 :root {
     --blanco: #ffffff;
     --gris1: #edf2f6;
-    --gris2: #2f3848;
-    --gris3: #1a202d;
+    --gris2: #6146D9;
+    --gris3: #7E6CFB;
     --negro: #000000;
-    --headingFont: 'Raleway', sans-serif;
-    --textFont: 'Roboto', sans-serif;
+    --headingFont: 'Yusei Magic', sans-serif;
+    --textFont: 'Source Sans Pro', sans-serif;
 }
 
 *,
@@ -119,10 +119,12 @@ a {
     .contenedor-app {
         display: flex;
         min-height: 100vh;
+        flex-direction: row-reverse;
     }
     aside {
         background-color: var(--blanco);
-        flex: 0 0 300px;
+        flex: 0 0 400px;
+        
     }
     .seccion-principal {
         flex: 1;
@@ -133,7 +135,7 @@ a {
 /* BARRA LATERAL */
 
 aside {
-    padding: 3rem;
+    padding: 8rem;
 }
 
 .formulario-nuevo-proyecto {
@@ -169,7 +171,7 @@ aside {
     display: flex;
     justify-content: space-between;
     background-color: var(--gris2);
-    padding: 4rem;
+    padding: 6rem;
 }
 
 .nombre-usuario {
@@ -344,14 +346,23 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+
+.relative{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .contenedor-form {
-    padding: 5rem 3rem;
+    padding: 10rem 5rem;
     max-width: 500px;
     width: 95%;
     background-color: var(--blanco);
     border-radius: 1rem;
+    border: 1px solid #000000;
 }
 
 .campo-form {
@@ -373,6 +384,7 @@ aside {
 .campo-form input[type="email"],
 .campo-form input[type="text"] {
     border: 1px solid #e1e1e1;
+    border-radius: 25px;
     padding: 1rem;
     flex: 1;
 }
